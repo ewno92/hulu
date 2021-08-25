@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderItem from "./HeaderItem";
 import Image from "next/image";
-// import Logo from "../public/logo.png";
+import Logo from "../public/logo.png";
 import {
   BadgeCheckIcon,
   CollectionIcon,
@@ -14,11 +14,16 @@ import {
 const Header = () => {
   return (
     <>
-      <header>
-        header
-        {/* <Image className="object-contain" src={Logo} width={150} height={50} /> */}
-        {/* <HeaderItem title="Home" Icon={HomeIcon} /> */}
-        <HeaderItem title="home" Icon={BadgeCheckIcon} />
+      <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
+        <div className="flex flex-grow justify-evenly max-w-2xl">
+          <HeaderItem title="HOME" Icon={HomeIcon} />
+          <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
+          <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
+          <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
+          <HeaderItem title="SEARCH" Icon={SearchIcon} />
+          <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+        </div>
+        <Image className="object-contain" src={Logo} width={150} height={50} />
       </header>
     </>
   );
