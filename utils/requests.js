@@ -3,30 +3,14 @@ const API_KEY = process.env.API_KEY;
 export default {
   fetchTrending: {
     title: "Trending",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
+    url: `/trending/all/week?api_key=${API_KEY}`,
   },
-  TopRated: {
+  fetchTopRated: {
     title: "Top Rated",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
+    url: `/movie/top_rated?api_key=${API_KEY}`,
   },
-  Action: {
+  fetchAction: {
     title: "Action",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  },
-  Comed2y: {
-    title: "Comedy",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  },
-  Comed3y: {
-    title: "Comedy",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  },
-  Co4medy: {
-    title: "Comedy",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  },
-  Comed6y: {
-    title: "Comedy",
-    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
+    url: `/discover/movie?api_key=${API_KEY}`,
   },
 };
