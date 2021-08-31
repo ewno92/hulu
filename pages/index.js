@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/Header";
+
 import Nav from "../components/Nav";
 import Results from "../components/Results";
 import requests from "../utils/requests";
@@ -12,7 +12,6 @@ export default function Home(results) {
         {/* <link> rel= "icon" href="#"</link> */}
       </Head>
 
-      <Header />
       <Nav />
       <Results results={results} />
     </div>
