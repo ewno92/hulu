@@ -2,10 +2,10 @@ import React from "react";
 
 const Signin = () => {
   return (
-    <div className="w-100 flex  justify-center mt-20 ">
+    <div className="w-100 flex justify-center mt-20 ">
       <form>
         <div>
-          <label class="text-gray-700 text-sm font-bold mb-2" for="username">
+          <label class="text-white text-sm font-bold mb-2" for="username">
             Username
           </label>
           <input
@@ -17,7 +17,7 @@ const Signin = () => {
         </div>
 
         <div>
-          <label class="text-gray-700 text-sm font-bold mb-2" for="password">
+          <label class="text-white   text-sm font-bold mb-2" for="password">
             Password
           </label>
           <input

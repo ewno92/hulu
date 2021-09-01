@@ -24,19 +24,26 @@ const Header = () => {
             </a>
           </Link>
 
-          <Link href="/trending">
+          <Link href="/signin">
             <a>
               <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
             </a>
           </Link>
-          <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
-          <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
-          <HeaderItem
-            title="SEARCH"
-            Icon={SearchIcon}
-            onClick={() => console.log("search")}
-          />
-
+          <Link href="/signin">
+            <a>
+              <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
+            </a>
+          </Link>
+          <Link href="/signin">
+            <a>
+              <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
+            </a>
+          </Link>
+          <Link href="/signin">
+            <a>
+              <HeaderItem title="SEARCH" Icon={SearchIcon} />
+            </a>
+          </Link>
           <Link href="/signin">
             <a>
               <HeaderItem title="ACCOUNT" Icon={UserIcon} />

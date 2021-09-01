@@ -3,9 +3,12 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 
 const Thumbnail = ({ result }) => {
   const BASE_URL = "https://image.tmdb.org/t/p/w500";
-  //   console.log(result);
+  // console.log(result);
   return (
-    <div className="p-2 group cursor-pointer transition duration-200 ease-in transform hover:sacle-105 hover:z-50 lg:opacity-70 hover:opacity-100 ">
+    <div
+      className="p-2 group cursor-pointer  duration-200  lg:opacity-70 hover:opacity-100 "
+      onClick={() => window.open("https://www.yourURL.com", "_blank")}
+    >
       <Image
         className="object-scale-down"
         layout="responsive"
